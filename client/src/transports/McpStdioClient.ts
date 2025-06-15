@@ -1,4 +1,4 @@
-import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 import { McpClient } from "../McpClient";
 import { McpClientOptions } from "../interfaces/McpClientOptions";
 
@@ -46,7 +46,6 @@ export class McpStdioClient extends McpClient {
       args: this.stdioOptions.args || [],
       env: this.stdioOptions.env,
       cwd: this.stdioOptions.cwd,
-      timeout: this.stdioOptions.timeout
     });
     
     await this.connect(transport);

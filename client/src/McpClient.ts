@@ -1,5 +1,5 @@
-import { Client } from "@modelcontextprotocol/sdk/client/index";
-import { Transport } from "@modelcontextprotocol/sdk/types";
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js";
 import { McpClientOptions } from "./interfaces/McpClientOptions";
 import { McpClientError, toMcpError } from "./utils/errorHandling";
 
